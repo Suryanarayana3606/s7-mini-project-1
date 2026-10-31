@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Space Grotesk", sans-serif;
+  --font-sans: "IBM Plex Sans", sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
+
+  --color-ink: #0B1220;
+  --color-ink-soft: #1B2537;
+  --color-canvas: #F6F7FA;
+  --color-surface: #FFFFFF;
+  --color-line: #E3E7EF;
+
+  --color-accent: #4F46E5;
+  --color-accent-soft: #EEF0FE;
+
+  --color-positive: #0F9D6C;
+  --color-positive-soft: #E7F7F1;
+  --color-neutral-tone: #B7791F;
+  --color-neutral-soft: #FBF3E3;
+  --color-negative: #C4351E;
+  --color-negative-soft: #FCEBE7;
+}
+
+body {
+  background: var(--color-canvas);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  letter-spacing: -0.01em;
+}
+
+.mono {
+  font-family: var(--font-mono);
+}
+
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-thumb { background: #C7CDD9; border-radius: 8px; }
+::-webkit-scrollbar-track { background: transparent; }
+
+@keyframes pulse-soft {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+.animate-pulse-soft {
+  animation: pulse-soft 1.6s ease-in-out infinite;
+}

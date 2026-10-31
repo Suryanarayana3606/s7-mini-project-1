@@ -1,0 +1,27 @@
+# Local environment and credentials
+.env
+.env.*
+!.env.example
+
+# Local data and archives
+*.db
+*.sqlite
+*.sqlite3
+*.zip
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Node.js and frontend build output
+node_modules/
+dist/
+dist-ssr/
+
+# Editor and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
